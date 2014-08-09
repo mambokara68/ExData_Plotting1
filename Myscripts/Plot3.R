@@ -28,5 +28,6 @@ lines(data$datetime,data$Sub_metering2,type="l",xlab="",ylab="Energy sub meterin
 lines(data$datetime,data$Sub_metering3,type="l",xlab="",ylab="Energy sub metering",col="blue")
 ##Add the needed legend
 legend("topright", lty=1, col = c("black","red", "blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+## Close the acquisition
 dev.off()
 
