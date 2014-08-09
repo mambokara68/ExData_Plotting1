@@ -11,6 +11,8 @@ data$datetime<-strptime(data$datetime,"%d/%m/%Y  %H:%M:%S")
 
 ##start the acquisition of the png file
 png(filename = "Plot2.png",width = 480, height = 480)
+##1 graph on the page
+par(mfrow=c(1,1))
 ## plot the needed graph
 plot(data$datetime,data[,3],type="l",xlab="",ylab="Global Active Power (kilowatts)")
 ## Close the acquisition
