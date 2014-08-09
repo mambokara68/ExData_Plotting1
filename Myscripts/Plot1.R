@@ -7,6 +7,8 @@ colnames(data)<-c("Date","Time","Global_active_power","Global_reactive_power","V
 
 ##start the acquisition of the png file
 png(filename = "Plot1.png",width = 480, height = 480)
+##1 graph on the page
+par(mfrow=c(1,1))
 ## plot the needed histogramm
 hist(data$Global_active_power,main="Global Active Power",col="red",xlab="Global Active Power (kilowatts)")
 ## Close the acquisition
