@@ -1,12 +1,4 @@
 
-
-png(filename = "Plot2.png",width = 480, height = 480)
-
-plot(data$datetime,data[,3],type="l",xlab="",ylab="Global Active Power (kilowatts)")
-## Close the acquisition
-dev.off()
-
-
 ##Read the data, but only the needed one : from the dates 2007-02-01 and 2007-02-02
 data <- read.table("household_power_consumption.txt", sep=";", na.strings="?",header=FALSE, skip= 66637, nrow=2880)
 
