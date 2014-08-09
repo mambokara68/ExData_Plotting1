@@ -6,4 +6,4 @@ My documents are in two directories
 
 * <b>Myscripts</b> (Plot1 to 4.R)
 
-The file household_power_consumption.txt must be in your working directory
+Scripts work as long as the file "household_power_consumption.txt" is in your current working directory (check by calling dir() and see if those files are in the listing). 
